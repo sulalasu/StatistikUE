@@ -33,7 +33,7 @@ server <- function(input, output) {
     }
   })
   
-  #Boxplot
+  #boxplot
   output$distPlot4 <- renderPlot({
     boxplot(data[,input$download], horizontal = T, main = paste(input$download))
   })
