@@ -2,7 +2,6 @@
 library(shiny)
 
 
-
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
@@ -26,11 +25,11 @@ ui <- fluidPage(
                                    min = 1,
                                    max = 50,
                                    value = 30)),
-                     mainPanel( 
-                     plotOutput("distPlot"),
-                     plotOutput("distPlot3"),
-                     checkboxInput("somevalue", "Abline Mean (blue) and median (black)", FALSE),
-                     plotOutput("distPlot4"),
+                     mainPanel(
+                       plotOutput("histPlot"),
+                       plotOutput("distPlot3"),
+                       checkboxInput("somevalue", "Abline Mean (blue) and median (black)", FALSE),
+                       plotOutput("distPlot4"),
                      )),
             
             
